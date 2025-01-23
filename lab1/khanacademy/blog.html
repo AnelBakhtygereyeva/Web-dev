@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+        <style>
+            body {
+                font-family: monospace;
+                background-color: rgb(174, 212, 235);
+            }
+            
+            #main-heading {
+                background-color: rgb(199, 169, 199);
+                width: 550px;
+                text-align: center;
+                color: rgb(89, 105, 145);
+            }
+            
+            #content-heading {
+                color: rgb(171, 80, 10);
+            }
+            
+            #content-table {
+                font-style: italic;
+                font-weight: bold;
+            }
+            
+            #table-head {
+                color:rgb(73, 64, 194);
+            }
+            
+            .post-heading {
+                color: rgb(158, 55, 158);
+            }
+            
+            .post-date {
+                font-size: 0.5em;
+            }
+            
+            .post-text {
+                font-family: fantasy;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1 id = "main-heading">Anelya's blog</h1>
+        <h3 id = "content-heading">Contents</h3>
+        <table id = "content-table">
+            <thead id = "table-head">
+                <tr>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody id = "table-body">
+                <tr>
+                    <td>15 Jan 2025</td>
+                    <td>"First post"</td>
+                    <td><a href="#first">First post!</a></td>
+                </tr>
+                <tr>
+                    <td>16 Jan 2025</td>
+                    <td>"Second post"</td>
+                    <td><a href="#second">Second post!</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2 class = "post-heading" id = "first">First post</h2>
+        <h6 class = "post-date">15 January 2025</h6>
+        
+        <p class = "post-text">I started the new semester in my university and learning about html and css for web development </p>
+        <h2 class = "post-heading" id = "second">Second post</h2>
+        <h6 class = "post-date">16 January 2025</h6>
+        
+        <p class = "post-text">I'm learning CSS styles and fonts</p>
+    </body>
+</html>
