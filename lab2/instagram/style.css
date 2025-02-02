@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Billabong';
+    src: url('fonts/Billabong.ttf') format('truetype'),
+         url('fonts/Billabong.otf') format('opentype');
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+.main-div {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px; 
+    flex-direction: row;
+    padding: 40px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.left-div {
+    margin-right: 30px;
+    display: block;
+}
+
+.left-div img {
+    width: 470px;
+    height: auto;
+}
+
+.right-div {
+    width: 450px;
+    max-width: 100%;
+}
+
+.logo-font {
+    font-family: 'Billabong', cursive;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.upper-box {
+    background: white;
+    padding: 30px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 1px;
+}
+
+.upper-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #67b5fa;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+    width: 100%;
+    position: relative;
+}
+
+.separator span {
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e8e8e;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.facebook-login {
+    width: 100%;
+    background-color: #ffffff;
+    margin: 10px 0;
+    color: #0495f6;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.facebook-login:hover {
+    color: #385060;
+}
+
+.facebook-logo {
+    width: 18px;
+    margin-right: 7px;
+    padding-bottom: 3px;
+    padding-top: -3px;
+}
+
+.down-box {
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 0;
+
+}
+
+.sign-up {
+    background-color: #ffffff;
+    color: #0495f6;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sign-up:hover {
+    color: #385060;
+}
+
+.down-box p {
+    font-size: 14px;
+}
+
+.forgot-password {
+    color: black;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: rgb(122, 122, 122);
+    text-decoration: none;
+}
+
+.Get-app {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.store-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.app-store, .google-store {
+    width: 135px;
+    margin: 5px;
+}
+
+.footer {
+    background-color: #fafafa;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer a {
+    font-size: 10px;
+    color: #8e8e8e;
+    margin: 3px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: center; 
+    }
+
+    .main-div {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-div {
+        display: none;
+    }
+
+    .right-div {
+        width: 80%;
+    }
+
+    .store-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .app-store, .google-store {
+        width: 120px;
+    }
+
+    .footer {
+        margin-top: 20px;
+        width: 80%;
+    }
+}
