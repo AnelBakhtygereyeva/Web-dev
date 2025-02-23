@@ -1,0 +1,21 @@
+<div class="category-container">
+  <button 
+    *ngFor="let category of categories" 
+    class="category-button" 
+    [class.active]="selectedCategory === category"
+    (click)="selectCategory(category)">
+    {{ category }}
+  </button>
+</div>
+
+<div class="products">
+  <app-product-list
+    *ngFor="let product of getDisplayedProducts()"  
+    [product]="product"
+    (like)="likeProduct(product.id)" 
+    (remove)="removeProduct(product.id)">
+  </app-product-list>
+</div>
+  
+
+  

@@ -1,0 +1,20 @@
+<div class="product-list">
+  <h3 class="product-title">{{ product.name }}</h3>
+  <div class="image-gallery">
+    <button class="arrow left" (click)="prevImage()">&#10094;</button>
+    <img [src]="product.imageUrls[currentImageIndex]" [alt]="product.name" class="product-image">
+    <button class="arrow right" (click)="nextImage()">&#10095;</button>
+  </div>
+  <p class="product-description">{{ product.description }}</p>
+  <div class="rating">
+    <span class="star">⭐</span>
+    <span>{{ product.rating }}</span>
+  </div>
+  <div class="buttons">
+    <button (click)="share('telegram')" class="button telegram">Telegram</button>
+    <a [href]="product.link"><button class="button kaspi" target="_blank">View on Kaspi.kz</button></a>
+    <button (click)="share('whatsapp')" class="button whatsapp">WhatsApp</button>
+    <button (click)="likeProduct()" class="button like">❤️ Like ({{ product.likes }})</button>
+    <button (click)="removeProduct()" class="button remove">🗑 Remove</button>
+  </div>
+</div>

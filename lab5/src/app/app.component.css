@@ -1,0 +1,28 @@
+main {
+    max-width: 2300px;
+    min-height: 1115px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #555;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+  }
+
+.app-header {
+  height: 70px;
+  background-color: #9b51e0;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, sans-serif
+}
