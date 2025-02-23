@@ -1,0 +1,23 @@
+<div class="product-card">
+    <h3 class="product-title">{{ product.name }}</h3>
+      <div class="image-gallery">
+      <button class="arrow left" (click)="prevImage()">&#10094;</button>
+      <img [src]="product.imageUrls[currentImageIndex]" [alt]="product.name" class="product-image">
+      <button class="arrow right" (click)="nextImage()">&#10095;</button>
+    </div>
+  
+    <p class="product-description">{{ product.description }}</p>
+  
+    <div class="rating">
+      <span class="star">⭐</span>
+      <span>{{ product.rating }}</span>
+    </div>
+  
+    <a [href]="product.link" class="button kaspi" target="_blank">View on Kaspi.kz</a>
+  
+    <div class="buttons">
+      <button (click)="share('whatsapp')" class="button whatsapp">WhatsApp</button>
+      <button (click)="share('telegram')" class="button telegram">Telegram</button>
+    </div>
+  </div>
+  
