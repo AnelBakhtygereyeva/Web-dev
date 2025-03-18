@@ -1,0 +1,11 @@
+.album-detail-container {
+    padding: 20px;
+  }
+  
+  .album-detail-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .album-detail-container button {
+    margin-right: 10px;
+  }

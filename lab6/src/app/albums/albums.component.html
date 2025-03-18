@@ -1,0 +1,11 @@
+<div class="albums-container">
+    <h1>Albums</h1>
+    <button [routerLink]="['/home']">Return to Home</button>
+    <ul>
+      <li *ngFor="let album of albums">
+        <span (click)="navigateToDetail(album.id)" style="cursor: pointer;">{{ album.title }}</span>
+        <button (click)="deleteAlbum(album.id)">Delete</button>
+      </li>
+    </ul>
+    
+  </div>

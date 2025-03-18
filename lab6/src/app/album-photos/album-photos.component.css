@@ -1,0 +1,13 @@
+.photos-container {
+    padding: 20px;
+  }
+  
+  .photos-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .photos-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }

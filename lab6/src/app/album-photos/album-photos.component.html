@@ -1,0 +1,8 @@
+<div class="photos-container">
+    <h2>Photos</h2>
+    <button [routerLink]="['/albums']">Back to Albums</button>
+    <div *ngFor="let photo of photos">
+      <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+      <p>{{ photo.title }}</p>
+    </div>
+  </div>
